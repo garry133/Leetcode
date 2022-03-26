@@ -1,3 +1,4 @@
+//wrong way
 // class Solution {
 // public:
 //     string longestPalindrome(string s) {
@@ -8,6 +9,7 @@
 //         int m=w2.size();
 //         int t[n+1][m+1];
 //         string ans;
+//         // int ans=0,ind=0;
 //         for(int i=0;i<=n;i++)t[i][0]=0;
 //         for(int i=0;i<=m;i++)t[0][i]=0;
 //         for(int i=1;i<=n;i++){
@@ -17,7 +19,18 @@
 //                 }
 //                 else
 //                     t[i][j]=0;
+                
+//                 // if(ans<t[i][j]){
+//                 //     ans=t[i][j];
+//                 //     ind=i-1;
+//                 // }
 //             }
+//         }
+//         for(int i=0;i<=n;i++){
+//             for(int j=0;j<=n;j++){
+//                 cout<<t[i][j]<<" ";
+//             }
+//             cout<<endl;
 //         }
 //         int i=n,j=m;
 //         while(i>0&&j>0){
@@ -33,9 +46,13 @@
 //             }
 //         }
 //         return ans;
+//         // cout<<ans<<" "<<ind<<endl;
+//         // ind=ind-ans+1;
+//         // return w1.substr(ind,ans);
 //     }
 // };
 
+//right way 
 class Solution {
 public:
     string longestPalindrome(string s) {
